@@ -20,7 +20,7 @@ fib_num_z = fib_num_x+fib_num_y
 print(f"fib_num_x = {fib_num_x} and fib_num_y = {fib_num_y} and fib_num_z = {fib_num_z}")
 print(f"next term in Fib sequence is fib_num_z = {fib_num_x} + {fib_num_y} = {fib_num_x+fib_num_y}")
 
-for i in range(100):
+for i in range(200):
     #print(f"BEFORE ASSIGN >>> fib_num_x = {fib_num_x} and fib_num_y = {fib_num_y} and fib_num_z = {fib_num_z}")
     fib_num_x = fib_num_y
     fib_num_y = fib_num_z
