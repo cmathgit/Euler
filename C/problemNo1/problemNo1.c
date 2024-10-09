@@ -13,8 +13,6 @@ int r, s;
 
 //this is limited by the size of the buffer being used
 
-
-// #include <iostream>
 // #include <cmath>
 #include <math.h>
 // #include <cstdio>
@@ -23,25 +21,19 @@ int r, s;
 #include <string.h>
 // #include <cstdlib>
 #include <stdlib.h>
-#include <vector>
-//using namespace std;
 
 //prototypes
-int sumMultiples(int);
-
+int summation(int);
 
 int main(int argc, char *argv[])
 {
-	//printf("Color %s, Number %d, Float %4.2f", "red", 123456, 3.14);
-	
 	//declarations
-	int num_param,summ, max_num_range, i, element0, element1, element2;
+	int num_param, summ, max_num_range, element0, element1, element2;
 	
 	//definitions
 	num_param = 2;
 	element0 = 0;
 	element1 = 1;
-	element2 = 2;
 	
 	r = 5;
 	s = 3;
@@ -49,28 +41,38 @@ int main(int argc, char *argv[])
 	//be careful - avoid segmentation fault 
 	if(argc != num_param)
 	{
-		fprintf(stderr, "Usage: %s <<max_num_range>\n", argv[element0]);
+		fprintf(stderr, "Usage: %s <max_num_range>\n", argv[element0]);
 		exit(EXIT_FAILURE);
 	}
 	
 	//if segmentation merit, use given parameters
+	max_num_range = atoi(argv[element1]);
+	summ = summation(max_num_range);
 	
-	summ = sumMultiples(max_num_range);
-	
-	printf("%d", summ);
+	printf("%d\n", summ);
 	exit(0);
 }
 
-int sumMultiples(int n)
+int summation(int n)
 {
-	
 	int sum = 0;
-	vector<int> vn;
-	for(unsigned int i = 0; i < v.size(); i++)
+	int v[n];
+
+	for(unsigned int i = 0; i < n; i++)
+	{
+		v[i] = i;
+		//printf("v[%d] is %d\n", i, v[i]);
+	}
+
+	for(unsigned int i = 0; i < n; i++)
 	{
 		if(((v[i] % r) == 0) || ((v[i] % s) == 0))
 		{
+			//printf("v[%d] is %d\n", i, v[i]);
 			sum += v[i];
+			//printf("After adding %d, sum is %d\n", v[i], sum);
 		}
 	}
+
+	return sum;
 }
