@@ -1,0 +1,1 @@
+./problemNo1.exe 1000

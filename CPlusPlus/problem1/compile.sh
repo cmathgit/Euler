@@ -1,0 +1,1 @@
+g++ problemNo1.cpp -o problemNo1

@@ -35,7 +35,7 @@ int num_param, element0, element1, element2;
 //prototypes
 int isItPrime(int);
 void eratosthenes(set <int> &, int);
-void print_primes(const set <int> &, int);
+void print_primes(const set <int> &, int)
 
 int main(int argc, char *argv[])
 {
