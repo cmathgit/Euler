@@ -1,0 +1,33 @@
+/*********************************************************************
+        Project Euler - Archived Problems and Solutions
+		Programmer: Cruz G. Macias
+		Problem No.: 2
+        Purpose: Each new term in the Fibonacci sequence is generated 
+		by adding the previous two terms. By starting with 1 and 2, 
+		the first 10 terms will be:
+		
+			1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
+
+		By considering the terms in the Fibonacci sequence whose values 
+		do not exceed four million, find the sum of the even-valued terms.
+*********************************************************************/
+
+//ignore commented code below
+//define globals
+
+//this is limited by the size of the buffer being used
+
+//int prime_arr[N];
+// #include <iostream>
+// #include <cmath>
+#include <math.h>
+// #include <cstdio>
+#include <stdio.h>
+// #include <cstring>
+#include <string.h>
+// #include <cstdlib>
+#include <stdlib.h>
+
+// using namespace std;
+
+//prototypes

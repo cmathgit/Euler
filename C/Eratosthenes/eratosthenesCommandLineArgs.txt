@@ -1,0 +1,10 @@
+gcc eratosthenes.c -o eratosthenes.exe
+./eratosthenes.exe 0 1
+./eratosthenes.exe 1 1
+./eratosthenes.exe 2 1
+./eratosthenes.exe 3 1
+./eratosthenes.exe 4 1
+./eratosthenes.exe 5 1
+./eratosthenes.exe 6 1
+./eratosthenes.exe 1001 1
+./eratosthenes.exe 1013 1

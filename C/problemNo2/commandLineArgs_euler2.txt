@@ -1,0 +1,2 @@
+gcc problemNo2.c -o problemNo2.exe
+./problemNo2.exe 1 1 0 0 10
