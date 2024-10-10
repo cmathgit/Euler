@@ -1,6 +1,10 @@
 # Project Euler
 # Programs to solve various problems found on Project Euler: https://projecteuler.net
 
+# My Project Euler Profile
+# https://projecteuler.net/profile/cmathsolve.png
+# https://projecteuler.net/profile/cmath.png
+
 # Problem 2 https://projecteuler.net/problem=2
 # Even Fibonacci Numbers
 
