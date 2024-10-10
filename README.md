@@ -1,12 +1,17 @@
 # Project Euler
 # Programs to solve various problems found on Project Euler: https://projecteuler.net
 
-# My Project Euler Profile
+# My Project Euler Profile(s)
 # https://projecteuler.net/profile/cmathsolve.png
 # https://projecteuler.net/profile/cmath.png
 
-# Problem 2 https://projecteuler.net/problem=2
+# Problem 1
+# Multiples of 3 or 5
+# https://projecteuler.net/problem=1
+
+# Problem 2 
 # Even Fibonacci Numbers
+# https://projecteuler.net/problem=2
 
 # Project Euler's rules
 # "I learned so much solving problem XXX, so is it okay to publish my solution elsewhere"?
