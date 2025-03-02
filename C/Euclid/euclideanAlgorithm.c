@@ -2,24 +2,28 @@
         Project Euclid - Euclidean Algorithm
 		Programmer: Cruz G. Macias
         Purpose: Find the greatest common divisor between given any
-		two integers
+		two integers.
+
+		this is limited by the size of the buffer being used
+
+		To compile:
+		gcc euclideanAlgorithm.c -o euclideanAlgorithm
+
+		Usage:
+		./euclideanAlgorithm <test_num_1> <test_num_2>	
+
+		Examples:
+		./euclideanAlgorithm 10 5
+		./euclideanAlgorithm 10 0
+		./euclideanAlgorithm 0 5
+		./euclideanAlgorithm 10 10
+		./euclideanAlgorithm 10 11
+
 *********************************************************************/
-//define globals
-
-//this is limited by the size of the buffer being used
-
-
-// #include <iostream>
-// #include <cmath>
 #include <math.h>
-// #include <cstdio>
 #include <stdio.h>
-// #include <cstring>
 #include <string.h>
-// #include <cstdlib>
 #include <stdlib.h>
-
-// using namespace std;
 
 //prototypes
 int gcd_alg(int, int);
@@ -30,7 +34,7 @@ int main(int argc, char *argv[])
 	//printf("Color %s, Number %d, Float %4.2f", "red", 123456, 3.14);
 	
 	//declarations
-	int num_param, test_num_1, test_num_2, test_num_3, gcd_result, element0, element1, element2;
+	int num_param, test_num_1, test_num_2, gcd_result, element0, element1, element2;
 	
 	//definitions
 	num_param = 3;
@@ -72,12 +76,8 @@ int main(int argc, char *argv[])
 	}
 	
 	//execute the Euclidean Algorithm
-	//printf("%d", test_num_1);
-	//printf("%d", test_num_2);
+
 	gcd_result = gcd_alg(test_num_1, test_num_2);
-	//printf("gcd result%d", gcd_result);
-	//test_num_3 = (test_num_1 % test_num_2);
-	//printf("test_num%d", test_num_3);
 	if(gcd_result == 1 && test_num_1 != 1)
 	{
 		printf("\n%d", test_num_1);
@@ -125,10 +125,6 @@ int main(int argc, char *argv[])
 */
 int gcd_alg(int a, int b)
 {
-	int gcd;
-	
-	//printf("a%d", a);
-	//printf("b%d", b);
 	if(b == 0)
 	{
 		return a;
@@ -137,5 +133,10 @@ int gcd_alg(int a, int b)
 	{
 		//recursion
 		return gcd_alg(b, (a % b));
+	}
+	else
+	{
+		printf("\nInvalid input values.\n");
+		exit(1);
 	}
 }
